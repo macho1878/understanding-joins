@@ -80,31 +80,31 @@ villains.arch_enemy_id = heroes.hero_id`
 
 // Fetch ALL heroes and corresponding villains (if they have one)
 
-`
-SELECT
-villains.name AS villain_name,
-villains.evil_plan,
-heroes.name AS hero_name,
-heroes.superpower
-FROM
-villains
-RIGHT JOIN
-heroes
-ON
-villains.arch_enemy_id = heroes.hero_id`
+// `
+// SELECT
+// villains.name AS villain_name,
+// villains.evil_plan,
+// heroes.name AS hero_name,
+// heroes.superpower
+// FROM
+// villains
+// RIGHT JOIN
+// heroes
+// ON
+// villains.arch_enemy_id = heroes.hero_id`
 
 
 // FULL JOIN
 // FETCH ALL Villains And Heroes, including any without an arch enemy/hero counterpart
-`
-SELECT
-villains.name AS villain_name,
-villains.evil_plan,
-heroes.name AS hero_name,
-heroes.superpower
-FROM
-villains
-FULL JOIN
-heroes
-ON
-villains.arch_enemy_id = heroes.hero_id`
+// `
+// SELECT
+// villains.name AS villain_name,
+// villains.evil_plan,
+// heroes.name AS hero_name,
+// heroes.superpower
+// FROM
+// villains
+// FULL JOIN
+// heroes
+// ON
+// villains.arch_enemy_id = heroes.hero_id`
